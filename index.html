@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamad Bin Saeed - Portfolio</title>
+    <style>
+        /* General Body Styling with gradient background */
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #86ebd7, #e6f7ff);
+            color: #333;
+            overflow-x: hidden;
+            background-attachment: fixed;
+        }
+
+        /* Header Styling */
+        header {
+            background: linear-gradient(135deg, #F8F8F8, #2B547E);
+            text-align: center;
+            padding: 40px 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            border-radius: 10px;
+            max-width: 95%;
+            margin: 20px auto;
+            color: white;
+        }
+
+        header h1 {
+            font-size: 3em;
+            margin: 0;
+            color: #ffffff;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Section Styling */
+        section {
+            margin: 20px auto;
+            padding: 40px;
+            max-width: 1200px;
+            border-radius: 10px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+            color: #333;
+            position: relative;
+        }
+
+        h2 {
+            color: #2B547E;
+            font-size: 2em;
+            border-bottom: 2px solid #87CEEB;
+            padding-bottom: 10px;
+        }
+
+        /* Animated Background for Introduction */
+        .intro-section {
+            background: linear-gradient(135deg, #bcf5ea, #c7f0dc);
+            background-size: 200% 200%; /* For animation effect */
+            animation: gradientAnimation 15s ease infinite; /* Continuous animation */
+            padding: 40px;
+            border-radius: 10px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        @keyframes gradientAnimation {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        /* Collapsible Sections */
+        .collapsible {
+            background-color: #2B547E;
+            color: white;
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 1.2em;
+            border-radius: 5px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            margin-bottom: 10px;
+        }
+
+        .collapsible:hover {
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        .collapsible:after {
+            content: '\002B';
+            color: white;
+            font-weight: bold;
+            float: right;
+        }
+
+        .collapsible.active:after {
+            content: "\2212"; /* Minus sign */
+        }
+
+        .collapsible-content {
+            padding: 0 18px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.2s ease-out;
+            background-color: rgba(255, 255, 255, 0.9);
+            margin-top: 10px;
+        }
+
+        /* Table for Skills */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .star {
+            color: gold;
+            font-size: 1.5em;
+        }
+
+        /* Footer Styling */
+        footer {
+            background: linear-gradient(135deg, #F8F8F8, #2B547E);
+            text-align: center;
+            padding: 40px;
+            color: white;
+            margin-top: 20px;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 1em;
+        }
+
+        /* Testimonial Profile Styling */
+        .testimonial {
+            display: flex;
+            align-items: center;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 15px;
+            margin: 15px 0;
+            animation: fadeIn 0.5s ease-in-out; /* Animation for testimonials */
+        }
+
+        .testimonial img {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            margin-right: 15px;
+        }
+
+        .testimonial p {
+            margin: 0;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+
+<header class="box-shadow">
+    <h1>Hamad Bin Saeed - Portfolio</h1>
+</header>
+
+<section class="container">
+    <h2>Introduction</h2>
+    <div class="intro-section">
+        <p>My name is Hamad Bin Saeed, and I am currently pursuing a Bachelor's in IT from the University of Mirpurkhas. I am in my last semester. I have been working as a Project Manager at EasyAiz for over a year. My job includes project management, client handling, employee task delegation, issue resolution, and providing timely updates to clients regarding their projects.</p>
+    </div>
+</section>
+
+<section class="container">
+    <h2>Skills</h2>
+    <button class="collapsible">Skills</button>
+    <div class="collapsible-content">
+        <table>
+            <tr>
+                <th>Skill</th>
+                <th>Rating</th>
+            </tr>
+            <tr>
+                <td>Project Management</td>
+                <td>
+                    <span class="stars">
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                    </span>
+                    <span>(90%)</span>
+                </td>
+            </tr>
+            <tr>
+                <td>Client Communication</td>
+                <td>
+                    <span class="stars">
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                    </span>
+                    <span>(80%)</span>
+                </td>
+            </tr>
+            <tr>
+                <td>Technical Management</td>
+                <td>
+                    <span class="stars">
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                    </span>
+                    <span>(75%)</span>
+                </td>
+            </tr>
+            <tr>
+                <td>Data Management</td>
+                <td>
+                    <span class="stars">
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                    </span>
+                    <span>(70%)</span>
+                </td>
+            </tr>
+            <tr>
+                <td>Python Programming</td>
+                <td>
+                    <span class="stars">
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                    </span>
+                    <span>(50%)</span>
+                </td>
+            </tr>
+        </table>
+    </div>
+</section>
+
+<section class="container">
+    <h2>Experience</h2>
+    <button class="collapsible">Experience</button>
+    <div class="collapsible-content">
+        <p>I have been working as a Project Manager at EasyAiz, handling multiple responsibilities such as managing client projects, delegating tasks to employees, solving technical issues, and ensuring timely updates for clients.</p>
+    </div>
+</section>
+
+<section class="container">
+    <h2>Case Studies</h2>
+    <button class="collapsible">Case Studies</button>
+    <div class="collapsible-content">
+        <div class="case-study">
+            <h3>Case Study 1</h3>
+            <p>Improved the existing workflow of a client by implementing agile methodologies.</p>
+        </div>
+        <div class="case-study">
+            <h3>Case Study 2</h3>
+            <p>Developed a new software solution that increased productivity by 30%.</p>
+        </div>
+        <div class="case-study">
+            <h3>Case Study 3</h3>
+            <p>Led a team that successfully completed a project 2 months ahead of schedule.</p>
+        </div>
+        <div class="case-study">
+            <h3>Case Study 4</h3>
+            <p>Implemented a new client feedback system that improved satisfaction rates.</p>
+        </div>
+        <div class="case-study">
+            <h3>Case Study 5</h3>
+            <p>Optimized resource allocation, reducing costs by 20%.</p>
+        </div>
+        <div class="case-study">
+            <h3>Case Study 6</h3>
+            <p>Trained employees in new software, leading to increased efficiency.</p>
+        </div>
+        <div class="case-study">
+            <h3>Case Study 7</h3>
+            <p>Conducted market research that informed product development.</p>
+        </div>
+        <div class="case-study">
+            <h3>Case Study 8</h3>
+            <p>Improved team collaboration through effective communication tools.</p>
+        </div>
+        <div class="case-study">
+            <h3>Case Study 9</h3>
+            <p>Developed a risk management strategy that minimized project delays.</p>
+        </div>
+        <div class="case-study">
+            <h3>Case Study 10</h3>
+            <p>Established a project tracking system that enhanced transparency.</p>
+        </div>
+    </div>
+</section>
+
+<section class="container">
+    <h2>Testimonials</h2>
+    <button class="collapsible">Testimonials</button>
+    <div class="collapsible-content">
+        <div class="testimonial">
+            <img src="client-a.jpg" alt="Client A">
+            <p>"Hamad's understanding of both technical and managerial aspects makes him a unique asset to any project!"</p>
+        </div>
+        <div class="testimonial">
+            <img src="client-b.jpg" alt="Client B">
+            <p>"Working with Hamad has transformed our workflow and improved our outcomes significantly."</p>
+        </div>
+        <div class="testimonial">
+            <img src="client-c.jpg" alt="Client C">
+            <p>"Hamad is an exceptional project manager who ensures everything runs smoothly!"</p>
+        </div>
+        <div class="testimonial">
+            <img src="client-d.jpg" alt="Client D">
+            <p>"Hamad's dedication and attention to detail have led to remarkable improvements in our processes."</p>
+        </div>
+        <div class="testimonial">
+            <img src="client-e.jpg" alt="Client E">
+            <p>"His leadership skills are outstanding, making him an effective team player."</p>
+        </div>
+        <div class="testimonial">
+            <img src="client-f.jpg" alt="Client F">
+            <p>"Hamad consistently delivers high-quality results on time."</p>
+        </div>
+        <div class="testimonial">
+            <img src="client-g.jpg" alt="Client G">
+            <p>"He has a knack for identifying issues before they become problems."</p>
+        </div>
+        <div class="testimonial">
+            <img src="client-h.jpg" alt="Client H">
+            <p>"Hamad's communication skills are exceptional, ensuring everyone is on the same page."</p>
+        </div>
+        <div class="testimonial">
+            <img src="client-i.jpg" alt="Client I">
+            <p>"His insights during project discussions are invaluable."</p>
+        </div>
+        <div class="testimonial">
+            <img src="client-j.jpg" alt="Client J">
+            <p>"I highly recommend Hamad for any project management role!"</p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2024 Hamad Bin Saeed. All rights reserved.</p>
+</footer>
+
+<script>
+    // Collapsible functionality
+    var coll = document.getElementsByClassName("collapsible");
+    for (var i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.maxHeight) {
+                content.style.maxHeight = null;
+            } else {
+                content.style.maxHeight = content.scrollHeight + "px";
+            }
+        });
+    }
+</script>
+
+</body>
+</html>
